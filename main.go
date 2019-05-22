@@ -1,25 +1,24 @@
 package main
 
 import (
-  "flag"
+  "bufio"
   "fmt"
   "os"
 )
 
 func main() {
-  const origin = "0123456789"
-  const shift = "1234567890"
+  //const origin = "0123456789"
+  //const shift = "1234567890"
 
-  flag.Parse()
-  //f,err := os.Open(flag.Arg(1))
-  //if err!=nil {
-  //  fmt.Print("error")
-  //}
-  //defer f.Close()
+  fmt.Print("暗号化したい文字列を入力してください。：")
+  stdin := bufio.NewScanner(os.Stdin)
+  stdin.Scan()
+  plainRuneArray := []rune(stdin.Text())
 
-  //第一引数に暗号化したい文字列を渡す
-  for _,r := range flag.Arg(0) {
-    
+  var shiftRuneArray []rune
+  for _,rune := range plainRuneArray {
+
   }
+  fmt.Print(plainRuneArray)
 
 }
