@@ -2,7 +2,7 @@
 
 ## 使い方
   
-  1. `cd`でkadai02に移動する
+  1. `cd`でCaesarCipherに移動する
   
   2. 入ったら `go run main.go` で起動
   
